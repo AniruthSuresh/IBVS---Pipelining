@@ -18,7 +18,7 @@ In each of these cases, three coordinates from the ArUco marker are utilized as 
 2. **Navigate to Each Method Folder**: Navigate to the folder of the desired method implementation. For example, to run the basic method implementation:
 
     ```bash
-    cd Basic_IBVS/
+    cd Basic IBVS/
     ```
 
 3. **Create Images Directory**: Create a directory named "Images" if it does not exist already:
