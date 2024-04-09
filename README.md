@@ -15,7 +15,7 @@ In each of these cases, three coordinates from the ArUco marker are utilized as 
 
 1. **Clone the Repository**: Clone this repository to your local machine.
 
-2. **Navigate to Each Method Folder**: Navigate to the folder of the desired method implementation. For example, to run the basic method implementation:
+2. **Navigate to Each Method Folder**: Navigate to the folder of the desired method implementation. For example, to run the Depth method implementation:
 
     ```bash
     cd Depth_IBVS/
