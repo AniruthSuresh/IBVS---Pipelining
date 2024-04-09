@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot name="camera">
+
+  <!-- Link representing the camera body -->
+  <link name="camera_body">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.1 0.1 0.1"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Link representing the camera lens -->
+  <link name="camera_lens">
+    <visual>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.05"/>
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <!-- Joint to connect the camera lens to the camera body -->
+  <joint name="camera_joint" type="fixed">
+    <parent link="camera_body"/>
+    <child link="camera_lens"/>
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+  </joint>
+
+</robot>

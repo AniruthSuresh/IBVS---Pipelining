@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot name="circle_grid_pattern">
+    <link name="circle_grid_link">
+        <visual>
+            <geometry>
+                <sphere radius="0.2"/>
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <material name="blue">
+                <color rgba="0 0 1 1"/>
+            </material>
+        </visual>
+    </link>
+</robot>
