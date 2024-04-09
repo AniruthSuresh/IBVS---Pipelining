@@ -18,7 +18,7 @@ In each of these cases, three coordinates from the ArUco marker are utilized as 
 2. **Navigate to Each Method Folder**: Navigate to the folder of the desired method implementation. For example, to run the basic method implementation:
 
     ```bash
-    cd src/basic_method/
+    cd Basic_IBVS/
     ```
 
 3. **Create Images Directory**: Create a directory named "Images" if it does not exist already:
@@ -33,5 +33,9 @@ In each of these cases, three coordinates from the ArUco marker are utilized as 
     python IBVS.py
     ```
 
-5. **View Results**: After the pipeline execution, view the results stored in the `Images/` directory. Convert these images to Video to observe the robot's motion
-6. 
+5. **View Results**: After the pipeline execution, view the results stored in the `Images/` directory. Convert these images to Video to observe the robot's motion .
+
+
+## Results 
+
+Videos demonstrating the performance of all three methods have been uploaded , feel free to watch the videos to observe the behavior and effectiveness of each method and understanding the robot's motion in each of them 
