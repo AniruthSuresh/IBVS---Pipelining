@@ -23,6 +23,14 @@ def robotControl(points, k=None): # points = coordinates of 4 corners
     # J1 = np.zeros((0, 6)) # Initialize as empty matrix
     z = [1, 1, 1]
 
+    # stop the motion if the max error < 10 
+    max_abs_error = max(abs(val) for val in error)
+
+    if max_abs_error <= 10:
+        print("All error values are less than +/- 10. Stopping execution.")
+        exit()
+    
+
     if k is not None:
         for i in range(3):
             z[i] = k[points[i][1] * 800 + points[i][0]]
