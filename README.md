@@ -8,7 +8,7 @@ This repository contains an implementation of the IBVS (Image-Based Visual Servo
 
 3. **Updated Jacobian Method**: Instead of using the standard Jacobian matrix, this method employs the modified Jacobian, which is calculated as the average of the standard Jacobian (Jacobian for the output reference i.e the Required Position) and the Current Image . This modification accounts for variations in the depth information.
 
-In each of these cases, three coordinates from the ArUco marker are utilized as the degrees of freedom (DOF) for the robot motion. The objective is to control the robot's end-effector to minimize the error between the final position and the required position, bringing it within a tolerance of +/- 10 units.
+In each of these cases, three coordinates from the ArUco marker are utilized as the degrees of freedom (DOF) for the robot motion is 6. The objective is to control the robot's end-effector to minimize the error between the final position and the required position, bringing it within a tolerance of +/- 10 units.
 
 
 ## Usage
