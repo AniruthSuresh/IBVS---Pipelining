@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="camera_only">
+
+  <!-- Define the link for the camera -->
+  <link name="camera_link">
+    <visual>
+      <!-- Define the visual representation of the camera -->
+      <geometry>
+        <cylinder radius="0.01" length="0.1"/>  <!-- Cylinder representing the camera -->
+      </geometry>
+    </visual>
+    <collision>
+      <!-- Define the collision representation of the camera -->
+      <geometry>
+        <cylinder radius="0.01" length="0.1"/>  <!-- Use the same cylinder for collision -->
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Define the joint to attach the camera to the world -->
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>  <!-- Attach to the world -->
+    <child link="camera_link"/>  <!-- Attach the camera link -->
+    <origin xyz="0 0 1.5"/>  <!-- Set the camera position -->
+  </joint>
+
+</robot>
