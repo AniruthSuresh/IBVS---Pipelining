@@ -10,6 +10,13 @@ This repository contains an implementation of the IBVS (Image-Based Visual Servo
 
 In each of these cases, three coordinates from the ArUco marker are utilized as the degrees of freedom (DOF) for the robot motion is 6. The objective is to control the robot's end-effector to minimize the error between the final position and the required position, bringing it within a tolerance of +/- 10 units.
 
+## Additional Information
+
+An additional aspect of this repository is the inclusion of a simulation without the robot arms or gripper visible in the video. This simulation is achieved by situating the camera above the robot and capturing the image from that perspective, resulting in the robot's arms being out of view.
+
+In this particular case, depth information is considered, and the motion of the system is halted when all error values are positive and less than a specific threshold. This approach enhances the understanding of the impact of depth information on the IBVS pipeline's performance, particularly in scenarios where the physical appearance of the robot arms may not be directly observable.
+
+Additionally, a simulation video demonstrating this scenario has been added to provide visual context and further insight into the behavior of the IBVS pipeline under these conditions.
 
 ## Usage
 
